@@ -1,0 +1,69 @@
+Cambium Networks - Premier League
+
+[Problem Statement]
+
+Develop a pseudo Full Stack web app for Indian Premier League, Which lists all the matches played between different teams. We have provided a CSV file which contains all the matches related data.
+
+You are expected to write an End-to-End Web app in tech stack mentioned below, which lists all the matches provided in the CSV. On the frontend show comprehensive information about the matches when clicked on the listed item.
+
+We expect you to write Backend and Frontend for this web app. We have provided the CSV which contains extensive information about the matches played.
+
+[Minimum requirement]
+
+— Use of CSV file and dump it in the database(mentioned below).
+
+— Write a functional backend and frontend in tech stack mentioned below.
+
+— The data sharing between backend and frontend must be in JSON via REST APIs.
+
+— List all the match info(very minimal like team names, win/loss etc) on the front end.
+
+— Zip all your source code, executables, screenshots and upload.
+
+[Plus point]
+
+Your backend should cater to all the requests from the frontend.
+
+— When clicked on a listed item, show complete comprehensive info about that match in a separate dedicated page.
+
+— Implement a Search team matches by name.
+
+— Provide Filter based on different seasons of the tournament on the front end.
+
+— Implement paging ​on the backend to display the results properly.
+
+— Zip all your source code, executables, screenshots and upload.
+
+[Advanced]
+
+Your backend should cater to all the requests from the frontend.
+
+— Implement the signup and login/logout functionality. You have to create user-auth schema in database.
+
+— Implement a functionality so that users can choose their favourite team. By functionality, the moment a person picks his favourite team, the web app’s color should change to color of that team, team’s logo should appear in the background. And list only best games of that team. Although give them a search box to search and list other teams as well. Again a dedicated table in the database and CRUD operations in others is required for this to maintain the records.
+
+You have to create database tables to keep track of user chosen team. And for any transaction you have to update multiple tables, which include the tables in the CSV we have provided and the tables which you have created. We also expect a text file which explains your database schema.
+
+— Custom design, font and icons to make web app more user ­friendly.
+
+— You may add portfolio ​activity comprising awesome work you have done in Tech stack mentioned below.
+
+— Use your imagination and add features which would make things easier for end users.
+
+— We expect production level, generic, robust and standalone code.
+
+— Zip all your source code, executables, screenshots and upload.
+
+— Beautify; Comment; Documented code; handle Input Exceptions, Unicode and Null values.
+
+[Guide]
+
+Premier League CSV: http://hck.re/A1Fz4c
+
+TechStack :
+
+Backend: NodeJS - Express.
+
+Db: NoSQL ( Mongo Preferred ) and PostgreSQL or MySQL as RDBMS.
+
+Frontend: CSS3, HTML5, Javascript, AngularJS/React.

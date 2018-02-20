@@ -1,0 +1,17 @@
+type Message {
+  id: ID!
+  text: String!
+}
+
+type Mutation {
+  addMessage(text: String!): Message
+}
+
+type Query {
+  messages: [Message]
+}
+
+type Subscription {
+  messageAdded: Message
+}
+

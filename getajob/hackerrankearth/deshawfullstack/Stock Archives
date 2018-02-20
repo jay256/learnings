@@ -1,0 +1,98 @@
+Stock Archives
+
+[Problem Statement]
+
+Develop a pseudo Full Stack Web Application for D E Shaw’s Stock Archives. A data dump is provided which contains the stocks related historical data from 2005 - 2016. Your web app should be an archive of historical stocks trading data. Users should be able to view history of desired stock prices for any point in time.
+
+[Ideal Behaviour]
+
+On Back End :
+
+— Write a backend which exports APIs with all the data provided in the dump below.
+
+— Get all companies and their historical stock price related data from the provided dump file and store it in the database.
+
+— You have to fetch real time stocks data from the third party API provided using tickers which you have stored in the database.
+
+— Use Design patterns for your solution (like MVC, MVP etc).
+
+— All the real time individual stock price data also has to be stored in db with timestamp to calculate progression/regression.
+
+On Front End:
+
+— Your frontend should be able to list all the archived data on the UI.
+
+— Your frontend should be able to query historical data for desired stocks.
+
+— Your frontend should display detailed company and stock info provided in the dump.
+
+— Your frontend should have provision to show progression and regression of each selected stock
+
+Progression: Demonstrating percentage increase in stock prices over time.
+
+Regression: Demonstrating percentage decrease in stock prices over time.
+
+[Minimum Requirement]
+
+— Write a backend in tech stack mentioned below which exposes some APIs to render data, which is requested from the frontend.
+
+On Front End:
+
+— Display best performing stocks by default.
+
+— Provide an option to get stock details by name or ticker(symbol).
+
+— Make an API call and demonstrate details of stocks.
+
+— Provide an option to see progression and regression of a stock.
+
+On Back end:
+
+— Store all the data provided in the dump file in your database.
+
+— Render all the requested data over network via REST call.
+
+— Zip all your source code, executables(if any, viz. War file), deployment instructions, screenshots and upload them.
+
+[Extra Work] (Only if time permits)
+
+Along with everything from the above level:
+
+— Cache all the frequently viewed stocks data in the system cache, and render it. But do make sure for their current prices, you make a third party API call. For example, if you are only interested in Apple and Google’s stock then store their static data in cache, but do make sure for their real time stock prices you fetch real time data from the provided third party API.
+
+— When clicked on a listed stock, show detailed information about it. With the detailed history of its value fluctuations over time.
+
+— Use your imagination and add features which would make things easier for end users.
+
+[Guide]
+
+Stock Archives Data dump: http://hck.re/CPKVPp
+
+Stocks API: https://www.alphavantage.co/   API Key: NCEQIIXTBBBD37DP
+
+How to call this API : https://www.alphavantage.co/documentation/
+
+Stocks info Xlsx files: http://hck.re/oUVSlU
+
+[About API]
+
+The Stocks API is a third party free API. You can get the API key from the provided URL. Documentation explains very clearly how to call this API.
+
+Example API call: https://www.alphavantage.co/query?apikey=demo&function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT
+
+[Ideal Stack]
+
+Frontend : Angular/React, Jquery, Vanilla JS.
+
+Backend : Java Enterprise, Python - Django, Node - Express.
+
+Db : Mysql, Maria db
+
+— Include Content Headers in your backend :
+
+HTTP Header
+
+    access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept
+    access-control-allow-methods: GET, POST, PUT
+    access-control-allow-origin: *
+    server: cloudflare-nginx
